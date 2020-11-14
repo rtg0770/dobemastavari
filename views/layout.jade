@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src="/javascripts/raphael.min.js")
+    script(src="/javascripts/animace.js")
+
+  body
+    nav
+      div#top-banner2
+        div#kruzitko
+          div#kruzitkoJakoTakove
+        div#logoSmall
+        div#text
+        div#menu
+          div#col1
+            a#home.link(href='/', '_self') Domů
+            a#produkty.link(href='produkty', '_self') Produkty
+            a#sluzby.link(href="sluzby", '_self') Služby
+            a#ospol.link(href="spolecnost-dobema", '_self') O společnosti
+            a#galerie.link(href="galerie", '_self') Galerie
+            a#kontakty.link(href="kontakty", '_self') Kontakt
+        div#togglemenu
+
+    div#mobilemenu
+        div#col1
+          button.link(type="button", onclick="window.open('produkty', '_self');") Produkty
+          button.link(type="button", onclick="window.open('sluzby', '_self');") Služby
+          button.link(type="button", onclick="window.open('spolecnost-dobema', '_self');") O společnosti
+          button.link(type="button", onclick="window.open('galerie', '_self');") Galerie
+          button.link(type="button", onclick="window.open('kontakty', '_self');") Kontakt
+
+    div.wrapper
+      block content
+      footer
+        p
+          &copy; 2020 DOBEMA s.r.o. v.1.1.1 
+          a.mail(href="mailto:rtg077@gmail.com")  David Helebrant

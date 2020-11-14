@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Roboto&display=swap');
+
+body {
+font-style: normal;
+font-weight: normal;
+font-size: 1.2rem;
+line-height: 1.3rem;
+}
+
+h1 {
+font-family: 'Big Shoulders Display', cursive;
+font-style: normal;
+font-weight: bold;
+line-height: 36px;
+text-align: center;
+color: $green;
+width: 100%;
+}
+
+.title {
+margin-top: 24px;
+margin-bottom: 24px;
+}
+
+h2 {
+font-family: 'Big Shoulders Display', cursive;
+font-style: normal;
+font-weight: bold;
+line-height: 31px;
+align-items: center;
+text-align: center;
+}
+
+h3 {    
+font-family: 'Big Shoulders Display', cursive;
+font-style: normal;
+font-weight: bold;
+line-height: 23px;
+align-items: center;
+text-align: center;
+padding: 4px 8px;
+}
+
+button {
+padding: 8px 32px;
+margin: auto;
+text-align: center;
+display: block;
+color: $white;
+background: $green;
+border: 1px solid #FBFBFB;
+box-sizing: border-box;
+border-radius: 4px;
+&:hover {
+background: $greenH;
+cursor: pointer;
+}
+}
+
+footer {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+font-style: normal;
+font-weight: normal;
+font-size: 1.2rem;
+line-height: 1.3rem;
+}
+
+.mail {
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    color: $green;
+    @include font-size(3rem);
+}
+
+h2 {
+    color: rgba($color: $green, $alpha: 0.9);
+    @include font-size(2.4rem);
+    line-height: 2.9rem;
+}
+
+h3, h4 {
+    color: rgba($color: $green, $alpha: 0.8);
+    @include font-size(1.8rem);
+    line-height: 2rem;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    @include font-size(1.2rem);
+}
+
+button {
+    @include font-size(1.2rem);
+}
+
+.cardsAbout {
+    & p {
+        @include respond-to(medium) {
+        text-align: left !important;
+        }
+            
+        @include respond-to(large) {
+        text-align: left !important;
+        }
+    }
+}

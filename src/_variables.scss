@@ -1,0 +1,29 @@
+$grayfontdark: #6d6d6c;
+$active: #212121;
+$menuLink: #4E4E4E;
+$green: #32CA41;
+$grey: #000;
+$greenH: rgba(50, 202,65, 0.2);
+$blackH: rgba(0, 0, 0, 0.6);
+$greybglight: #C1C1C1;
+$bodyBG: #EBF6FD;
+$white: #FBFBFB;
+$bglightgray: #EFEEEE;
+$graybglight: #EFEEEE;
+
+$s: 4px;
+$m: 8px;
+$l: 24px;
+$xl: 32px;
+$xxl: 64px;
+
+$breakpoints: (
+'small':  767px,
+'medium': 992px,
+'large':  1200px
+) !default;
+
+body {
+color: $grayfontdark;
+background-color: $graybglight;
+}
