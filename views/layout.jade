@@ -25,6 +25,7 @@ html
 
     div#mobilemenu
         div#col1
+          button.link(type="button", onclick="window.open('/', '_self');") Domů
           button.link(type="button", onclick="window.open('produkty', '_self');") Produkty
           button.link(type="button", onclick="window.open('sluzby', '_self');") Služby
           button.link(type="button", onclick="window.open('spolecnost-dobema', '_self');") O společnosti
@@ -33,7 +34,7 @@ html
 
     div.wrapper
       block content
-      footer
-        p
-          &copy; 2020 DOBEMA s.r.o. v.1.1.1 
-          a.mail(href="mailto:rtg077@gmail.com")  David Helebrant
+    footer
+      p
+        &copy; 2020 DOBEMA s.r.o. 
+        a.mail(href="mailto:rtg077@gmail.com")  David Helebrant
